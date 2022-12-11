@@ -1,3 +1,4 @@
 data/test.tsv
 data/train.tsv
+data/glove.840B.300d.txt
 .idea/
