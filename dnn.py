@@ -83,16 +83,16 @@ INPUT_SIZE = 1_000
 
 
 def main():
-    with open('x_train_transformed_smaller.pkl', 'rb') as f:
+    with open('x_train_transformed.pkl', 'rb') as f:
         X_train = pickle.load(f)
 
-    with open('x_test_transformed_smaller.pkl', 'rb') as f:
+    with open('x_test_transformed.pkl', 'rb') as f:
         X_test = pickle.load(f)
 
-    with open('y_train_smaller.pkl', 'rb') as f:
+    with open('y_train.pkl', 'rb') as f:
         Y_train = pickle.load(f)
 
-    with open('y_test_smaller.pkl', 'rb') as f:
+    with open('y_test.pkl', 'rb') as f:
         Y_test = pickle.load(f)
 
     dnn = DNN(layer_sizes=[INPUT_SIZE, 1])
